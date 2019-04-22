@@ -1,0 +1,150 @@
+<html>
+<head>
+	<title>SCMUN</title>
+	<div> <!-- Bootstrap Alert -->
+		<style type="text/css">
+			.alert-primary {
+			    color: #ffffff;
+			    background-color: #004466;
+			    border-color: #b8daff;
+			}
+
+			.alert {
+			    position: relative;
+			    padding: .75rem 1.25rem;
+			    margin-bottom: 1rem;
+			    border: 1px solid transparent;
+			    border-radius: .35rem;
+			}
+			.alert, ::after, ::before {
+			    box-sizing: border-box;
+			}
+			div.alert {
+			    display: block;
+			    opacity: 0;
+			    margin-top: 1.4%;
+			    text-align: center;
+			    font-size: 1.2rem;
+			}
+			iframe {
+				margin-top: 0.5%;
+			}
+		</style>
+	</div>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script type="text/javascript" src="assets/lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		function copy2ClipboardNAlert(str) {
+			const el = document.createElement('textarea');
+			el.value = str;
+			document.body.appendChild(el);
+			el.select();
+			document.execCommand('copy');
+			document.body.removeChild(el);
+
+			$('div.alert').animate({'opacity': '0.85'}, 600)
+			$('div.alert').animate({'opacity': '0'}, 3000)
+		};
+	</script>
+</head>
+<body>
+
+	<div class="topBar" id="backOfTopBar"></div>
+	<div class="topBar">
+		<img class="logo" onclick="window.location = '/'" style="cursor: pointer;" src="assets/logo.png">
+		<span id="scmun" onclick="window.location = '/'" style="cursor: pointer;">SCMUN VIII</span>
+		<br>
+		<span id="hostedby" onclick="window.location = '/'" style="cursor: pointer;">Hosted by Nansha College Preparatory Academy</span>
+		<div class="burgerBars">
+			<div class="burgerBar1"></div>
+			<div class="burgerBar2"></div>
+			<div class="burgerBar3"></div>
+		</div>
+		<!-- Alert for content copy -->
+		<div class="alert alert-primary" role="alert">Address copied to clipboard.</div>
+	</div>
+
+	<div class="burgerSlideoutPanel">
+		<p class="burgerItems" onclick="window.location = 'index.html'" style="cursor: pointer;">HOME</p>
+
+		<p class="burgerItems">CONFERENCE</p>
+		<p class="burgerSubItems" onclick="window.location = 'index.html'" style="cursor: pointer;">Home<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'about.html'" style="cursor: pointer;">About<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'history.html'" style="cursor: pointer;">History<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'directorMessage.html'" style="cursor: pointer;">Director's Message<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'schedule.html'" style="cursor: pointer;">Schedule<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'venue.html'" style="cursor: pointer;">Venue<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'awards.html'" style="cursor: pointer;">Awards Available<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'registration.html'" style="cursor: pointer;">Registration<span class="burgerSubItemArrow">></span></p>
+
+		<p class="burgerItems">COMMITTEES</p>
+		<p class="burgerSubItems" onclick="window.location = 'UNSC.html'" style="cursor: pointer;">UNSC<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'DISEC.html'" style="cursor: pointer;">DISEC<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'WHO.html'" style="cursor: pointer;">WHO<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'ECOSOC.html'" style="cursor: pointer;">ECOSOC<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'SOCHUM.html'" style="cursor: pointer;">SOCHUM<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'UNICEF.html'" style="cursor: pointer;">UNICEF<span class="burgerSubItemArrow">></span></p>
+
+		<p class="burgerItems">MANAGEMENT TEAM</p>
+		<p class="burgerSubItems" onclick="window.location = 'managers.html'" style="cursor: pointer;">Managers<span class="burgerSubItemArrow">></span></p>
+		<p class="burgerSubItems" onclick="window.location = 'officers.html'" style="cursor: pointer;">Officers<span class="burgerSubItemArrow">></span></p>
+
+		<p class="burgerItems">RESOURCES</p>
+		<p class="burgerSubItems" onclick="window.location = 'procedures.html'" style="cursor: pointer;">Procedure and Rules<span class="burgerSubItemArrow">></span></p>
+		<!--<p class="burgerSubItems" onclick="window.location = 'directions.html'" style="cursor: pointer;">Preparation<span class="burgerSubItemArrow">></span></p>-->
+		<p class="burgerSubItems" onclick="window.location = 'contact.html'" style="cursor: pointer;">Contact<span class="burgerSubItemArrow">></span></p>
+	</div>
+
+	<div class="restOfThePage">
+
+		<div class="pg3 leaveNavbarMarginToStartPage" style="height: 127vh;">
+			<p style="margin-bottom: 2%;" class="bigCenteredTitle smallMarginTop">School Location</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.654159936181!2d113.61124180947095!3d22.763929346032274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403b99ae274f429%3A0x1b4a4064f506f544!2sGuangzhou+Yingdong+Middle+School!5e0!3m2!1sen!2sus!4v1541612181342" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe width="600" height="450" frameborder="0" src="https://cn.bing.com/maps/embed?h=450&w=600&cp=22.76360181331266~113.61135091049594&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"></iframe>
+			<p style="font-size: 1.7rem; margin-top: 2%; margin-bottom: 0; font-style: italic;">Click the following to copy:</p>
+			<p style="cursor: pointer; margin-top: 0; padding: 2%; font-size: 1.3rem" onclick="copy2ClipboardNAlert(this.innerHTML)">180 Gang Qian Boulevard, Nansha, Guangzhou, Guangdong, China 511458</p>
+
+			<p class="bigCenteredTitle smallMarginTop">Room Assignments</p>
+			<p style="margin-top: 0; padding: 2%; font-size: 0.9rem">*Room Assignment information will be available a week before the conferene.</p>
+
+			<table class="roomAssignmentsTable">
+				<thead class="roomAssignmentsP">
+					<th class="roomAssignmentsRoom">Committee</th>
+					<th class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">Room</span></th>
+				</thead>
+
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">UNSC</span></td>
+					<td class="roomAssignmentsRoom">Pending</td>
+				</tr>
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">DISEC</span></td>
+					<td class="roomAssignmentsRoom">Pending</td>
+				</tr>
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">WHO</span>
+					<td class="roomAssignmentsRoom">Pending</td>
+					</td></tr>
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">ECOSOC</span>
+					<td class="roomAssignmentsRoom">Pending</td>
+					</td></tr>
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">SOCHUM</span>
+					<td class="roomAssignmentsRoom">Pending</td>
+					</td></tr>
+				<tr class="roomAssignmentsP">
+					<td class="roomAssignmentsCommittee"><span class="roomAssignmentsCommitteeSpan">UNICEF</span></td>
+					<td class="roomAssignmentsRoom">Pending</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+</body>
+	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript">
+		startAnimation()
+	</script>
+</html>
