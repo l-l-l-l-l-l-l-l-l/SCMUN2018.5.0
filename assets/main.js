@@ -9,22 +9,22 @@ var startAnimation = function(delayScaleM = 0.0) {
 	$(".burgerBars").click(function() {
 		this.classList.toggle("burgerChanged");
 		if (isPanelOut == false) {
-			$(".burgerSlideoutPanel").animate({"width": "38%", "opacity": 1}, 400);
-			$(".burgerBar2").animate({"opacity": 0}, 200);
-			$(".burgerItems").show(400)
-			$(".burgerSubItems").show(400)
-			isPanelOut = true
+			$(".burgerSlideoutPanel").animate({"width": "38%", "opacity": 1}, 200);
+			$(".burgerBar2").animate({"opacity": 0}, 50);
+			$(".burgerItems").show(200);
+			$(".burgerSubItems").show(200);
+			isPanelOut = true;
 		} else {
-			$(".burgerItems").hide(400)
-			$(".burgerSubItems").hide(400)
-			$(".burgerSlideoutPanel").animate({"width": "0%", "opacity": 0}, 400)
-			$(".burgerBar2").animate({"opacity": 1}, 200)
-			isPanelOut = false
+			$(".burgerItems").hide(100);
+			$(".burgerSubItems").hide(100);
+			$(".burgerSlideoutPanel").animate({"width": "0%", "opacity": 0}, 100);
+			$(".burgerBar2").animate({"opacity": 1}, 50);
+			isPanelOut = false;
 		}
 	})
-	$(".burgerBar1").delay(1900*delayScale).animate({"opacity": 1}, 400*delayScale)
-	$(".burgerBar2").delay(2100*delayScale).animate({"opacity": 1}, 400*delayScale)
-	$(".burgerBar3").delay(2300*delayScale).animate({"opacity": 1}, 400*delayScale)
+	$(".burgerBar1").delay(1900*delayScale).animate({"opacity": 1}, 400*delayScale);
+	$(".burgerBar2").delay(2100*delayScale).animate({"opacity": 1}, 400*delayScale);
+	$(".burgerBar3").delay(2300*delayScale).animate({"opacity": 1}, 400*delayScale);
 	$(".burgerSubItems").hover(function() {
 		$(this).children("span.burgerSubItemArrow").animate({"opacity": 1, "margin-left": "2%"}, 150)
 		// $(this).children("span.burgerSubItemArrow").animate({"opacity": 1, "margin-left": "1.5%"}, 175)
@@ -81,8 +81,8 @@ function copy2Clipboard(str) {
 };
 
 $(document).ready(function() {
-	topBarStays()
-	panelStays()
-	backgroundSwitch(1, 12)
-	console.log('All functions OK.')
-})
+	topBarStays();
+	panelStays();
+	backgroundSwitch(1, 12);
+	console.log('All functions OK.');
+});
