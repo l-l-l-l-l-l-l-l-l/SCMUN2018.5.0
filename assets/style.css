@@ -493,3 +493,13 @@ p.card-text {
 	margin-bottom: 2%;
 	margin-top: 2%;
 }
+
+
+/*Anti-Bootstrap*/
+.logo {
+    box-sizing: content-box;
+}
+
+body {
+    line-height: normal;
+}
