@@ -476,3 +476,20 @@ p.card-text {
 	-o-transition: background-color 200ms;
 	transition: background-color 200ms;
 }
+
+.subPoint {
+	margin-left: 6%;
+}
+.titlePoint {
+	font-weight: 600;
+	font-size: 1.7rem;
+	margin-bottom: 0%;
+	margin-top: 8%;
+}
+
+.officerCategory {
+	font-weight: 600;
+	font-size: 1.7rem;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
