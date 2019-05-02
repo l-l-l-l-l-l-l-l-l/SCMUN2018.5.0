@@ -509,7 +509,7 @@ body {
 /******Card Implementation******/
 /*******************************/
 
-/*Font size changed*/
+/*Change font size*/
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -532,4 +532,12 @@ body {
 .card-text:last-child {
     margin-bottom: 0;
     font-size: 1rem;
+}
+
+/*Change colour*/
+.card {
+    /*Card background colour*/
+    background-color: rgba(226, 226, 226, 0.65);
+    /*Card border line colour*/
+    border: 1px solid rgba(0, 121, 210, 0.4);
 }
