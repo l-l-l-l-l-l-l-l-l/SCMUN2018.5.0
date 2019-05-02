@@ -58,6 +58,7 @@ p {
 	z-index: 48;
 	position: absolute;
 	margin-right: 3%;
+    box-sizing: unset;
 }
 #backOfTopBar {
 	z-index: 47;
