@@ -494,11 +494,11 @@ p.card-text {
 /******Anti-Bootstrap******/
 /**************************/
 .logo {
-    box-sizing: content-box;
+    box-sizing: content-box!important;
 }
 
 body {
-    line-height: normal;
+    line-height: normal!important;
 }
 
 /*******************************/
