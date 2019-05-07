@@ -489,6 +489,10 @@ p.card-text {
 	margin-bottom: 2%;
 	margin-top: 4%;
 }
+.giantLogo {
+	width: 60%;
+	max-width: 200px;
+}
 
 /**************************/
 /******Anti-Bootstrap******/
