@@ -525,7 +525,7 @@ p.card-text {
 
 .subtitle {
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 2rem!important;
 	margin: 3% 10% 1.5%;
 }
 
