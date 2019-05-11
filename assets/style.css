@@ -30,12 +30,13 @@ img.logo {
 	margin-top: 2.7%;
 }
 @font-face {
-  font-family: 'ASortOfFont';
-  src: url('font/FiraSansBook.eot'); /* IE9 Compat Modes */
-  src: url('font/FiraSansBook.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/FiraSansBook.woff') format('woff'), /* Modern Browsers */
-       url('font/FiraSansBook.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('font/FiraSansBook.svg#svgFontName') format('svg'); /* Legacy iOS */
+  /*font-family: 'ASortOfFont';*/
+  /*src: url('font/FiraSansBook.eot'); !* IE9 Compat Modes *!*/
+  /*src: url('font/FiraSansBook.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
+  /*     url('font/FiraSansBook.woff') format('woff'), !* Modern Browsers *!*/
+  /*     url('font/FiraSansBook.ttf')  format('truetype'), !* Safari, Android, iOS *!*/
+  /*     url('font/FiraSansBook.svg#svgFontName') format('svg'); !* Legacy iOS *!*/
+	font-family: 'Fira Sans', sans-serif;
 }
 html body {
 	font-family: 'ASortOfFont', Helvetica, Arial, sans-serif!important;
